@@ -1,0 +1,108 @@
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.swipe-app {
+	height: 40rem;
+	width: 22.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+.header-icon {
+	padding: 0.5rem 0;
+}
+
+.header-icon img {
+	height: 2rem;
+}
+
+.draggable-row {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.draggable {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: black;
+	color: white;
+	overflow: hidden;
+}
+
+.content-image-wrapper {
+	width: 100%;
+}
+
+.content-image {
+	width: 100%;
+	height: 100%;
+}
+
+.content-name {
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: left;
+	padding-left: 0.5rem;
+}
+
+.content-info {
+	max-height: 40%;
+	text-align: left;
+	padding: 0.5rem;
+}
+
+.draggable-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	top: 0;
+}
+
+.like-dislike-label {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 6rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	pointer-events: none;
+}
+
+.none-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
